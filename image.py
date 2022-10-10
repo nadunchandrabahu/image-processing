@@ -1,5 +1,7 @@
-from PIL import Image
+from PIL import Image, ImageFilter
 
-img = Image.open("./pikachu.jpg")
+img = Image.open("pikachu.jpg")
 
-print(img)
+filtered_img = img.convert("L")
+
+filtered_img.save("b&w pikachu.png", "png")
