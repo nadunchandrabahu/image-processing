@@ -27,7 +27,7 @@ while True:
 while True:
     try:
         output_format = str(
-            input("\nPlease enter the format you would like to convert to: e.g.: jpeg,png,etc. \n"))
+            input("\nPlease enter the format you would like to convert to: e.g.: jpeg, png, etc. \n"))
         if output_format not in ["jpg", "jpeg", "png"]:
             print("Output file format not recognized, please try again.")
             continue
@@ -38,7 +38,6 @@ while True:
 
 if path_str.exists():
     out_File = in_File.split(".")[0]
-    print(out_File)
     with Image.open(in_File) as img:
         try:
             img.save(out_File+"-converted."+output_format, output_format)
