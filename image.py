@@ -1,7 +1,18 @@
 from PIL import Image, ImageFilter
 
-img = Image.open("pikachu.jpg")
+# converts to black and white, blurs and saves as png
+'''
+with Image.open("pikachu.jpg") as img:
+    img = img.convert("L")
+    filtered_img = img.filter(ImageFilter.BLUR)
+    filtered_img.save("b&w pikachu.png", "png")
+    filtered_img.show()
+'''
 
-filtered_img = img.convert("L")
+# to reduce size of image and make thumbnail, saved as png
 
-filtered_img.save("b&w pikachu.png", "png")
+'''
+with Image.open("astro.jpg", mode="r") as img:
+    img.thumbnail((640, 640))
+    img.save("astro-converted.png", "png")
+'''
