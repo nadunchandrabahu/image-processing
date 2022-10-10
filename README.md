@@ -1,6 +1,6 @@
-# image-processing
+# image conversion using Pillow library 
 
-CONVERT CONVERT ENTIRE FOLDER FROM JPG TO PNG [.jpg, .jpeg, .png]
+CONVERT ENTIRE FOLDER FROM JPG TO PNG 
 =================================================================================================================================
 Instructions: 
 1) Run using command line interface: py batch-image-converter.py *Source folder name containing images* *Output folder name*
