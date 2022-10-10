@@ -39,6 +39,11 @@ Alternatively, choose a different name for the output folder.''')
 print("Analyzing...\n")
 
 file_count = reduce(getFileCount, os.listdir(source_folder), 0)
+
+if file_count == 0:
+    print("No .jpg Image files were found. Program will exit now.")
+    exit()
+
 counter = 0
 
 for file in os.listdir(source_folder):  # file incorporates full input file name
